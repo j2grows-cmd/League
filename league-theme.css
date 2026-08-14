@@ -1,0 +1,36 @@
+/* League-inspired premium theme — original artwork/UI only */
+:root{--lol-blue:#0b1e2d;--lol-blue2:#123c52;--lol-gold:#c8aa6e;--lol-gold2:#f0d28a;--lol-cyan:#00b8d9;--lol-red:#c84b58;--lol-panel:#09131d;--lol-border:#3a4b5b}
+body{font-family:Inter,system-ui,sans-serif!important;background:#050b10!important;color:#e8e1cf!important}
+.app{background:radial-gradient(ellipse at 50% 20%,#102838 0,#07121b 38%,#03070b 100%)!important}
+.topbar{height:74px!important;background:linear-gradient(180deg,#071522,#08111a)!important;border-bottom:1px solid #52616b!important;box-shadow:0 3px 30px #000c!important}
+.brand-gem{background:linear-gradient(145deg,#1a4358,#07131e)!important;color:var(--lol-gold2)!important;border-color:#8b7448!important;text-shadow:0 0 16px #d8b56a!important}
+.brand strong,.champion-card h1,.battle-head h2,.match-time{font-family:Cinzel,Georgia,serif!important}
+.brand strong{letter-spacing:.18em!important;color:#eee7d3!important}
+.nav{color:#71818c!important}.nav .active{color:#f0d28a!important}.nav .active:after{background:var(--lol-gold2)!important;box-shadow:0 0 14px #c8aa6e!important}
+.account{color:#d8c38e!important}.currency{color:#e0bd65!important}.icon-btn{background:#0c1924!important;border-color:#566474!important}
+.matchbar{background:#050d14!important;border-color:#243744!important}.team.blue{color:#45b8df!important}.team.red{color:#d96571!important}.match-time{color:#d9cfb9!important}
+.panel{background:linear-gradient(145deg,#0b1721f7,#060d14fa)!important;border:1px solid #394b59!important;box-shadow:0 18px 55px #000b,inset 0 1px #ffffff09!important;border-radius:2px!important}
+.panel:after{content:"";position:absolute;inset:5px;border:1px solid #c8aa6e12;pointer-events:none}
+.champion-card{background:linear-gradient(180deg,#0e202c,#071019)!important}
+.portrait{background:radial-gradient(circle at 35% 25%,#a7e7ef,#276b7e 45%,#08151e 76%)!important;border-color:#b6d8cf!important;box-shadow:0 0 0 4px #09151f,0 0 35px #1bc4d855!important}
+.level-badge{background:#101923!important;border-color:#c8aa6e!important;color:#f0d28a!important}
+.eyebrow,.panel-heading{color:#9a8b6b!important}.panel-heading{border-color:#344650!important}
+.xpbar{background:#1a2b34!important}.xpbar span{background:linear-gradient(90deg,#a9823c,#f1d58e)!important}
+.resource i{background:#101d25!important;border:1px solid #263a45}.resource em{background:linear-gradient(90deg,#1f9c6d,#61d9aa)!important}.resource.mana em{background:linear-gradient(90deg,#087fa7,#48d2ee)!important}
+.combat-stats{border-color:#2a3a45!important}.combat-stats div+div{border-color:#2a3a45!important}
+.abilities-panel{background:linear-gradient(145deg,#0a151f,#060c12)!important}.ability{background:linear-gradient(145deg,#13222d,#09131b)!important;border-color:#40515c!important;border-radius:2px!important}.ability:hover{border-color:#b3985f!important}.ability.ready{border-color:#2b8ba5!important}
+.spell-icon{border-color:#64737b!important;border-radius:2px!important}.spell-icon.q{background:radial-gradient(circle,#56d9ee,#123f50)!important}.spell-icon.w{background:radial-gradient(circle,#d8a7ff,#3b225c)!important}.spell-icon.e{background:radial-gradient(circle,#75e3bd,#164e3d)!important}.spell-icon.r{background:radial-gradient(circle,#ffd07c,#67331d)!important}
+.upgrade{background:linear-gradient(180deg,#332817,#17120b)!important;border-color:#927646!important;color:#ead7aa!important}
+.arena-wrap{background:#020609!important;border-color:#5a655f!important;box-shadow:0 20px 80px #000!important}.arena{background:radial-gradient(circle at 50% 50%,#16483d 0,#0d302b 30%,#071c1b 62%,#061015 100%)!important}
+.river{background:linear-gradient(90deg,transparent,#145d6d,#1b7380,#104b58,transparent)!important}.lane{background:linear-gradient(90deg,transparent,#29473e 8%,#315248 50%,#29473e 92%,transparent)!important;border-color:#b7d1b522!important}
+.jungle{background:radial-gradient(circle,#174e34,#0b2a21 65%,transparent 72%)!important}.brush{background:#24653c!important;box-shadow:inset 0 0 25px #0a2415,0 0 12px #143e28!important}
+.tower{background:linear-gradient(160deg,#1b3542,#0b1821)!important;border-color:#b9a36b!important;box-shadow:0 0 20px #c8aa6e20!important}.blue-tower{border-color:#43b9df!important;color:#8ce8ff!important}.red-tower{border-color:#d65e6d!important;color:#ff8997!important}
+.base{background:#08151ed9!important;border-color:#8e7447!important}.blue-base{color:#67d9f3!important}.red-base{color:#f07b87!important}
+.camp-marker{background:linear-gradient(145deg,#102e28,#081915)!important;border-color:#5d927c!important;color:#b7ddc9!important;border-radius:2px!important}.camp-marker small{color:#e0bd65!important}
+.hero-unit{background:radial-gradient(circle at 35% 25%,#b7f0f3,#26768b 45%,#091923)!important;border-color:#b9e4df!important;box-shadow:0 0 0 4px #08151ecc,0 0 35px #28bfd455!important}
+.enemy-minion,.enemy{background:radial-gradient(circle,#df6c7a,#692536)!important;border-color:#e78b94!important}
+.objective-dot{background:#c8aa6e!important;box-shadow:0 0 10px #c8aa6e!important}.battle-footer{background:#071019!important;border-color:#3a4b59!important}
+#nextWave{background:linear-gradient(180deg,#1b4b5b,#0b2530)!important;border:1px solid #6aa9b6!important;color:#d9f4f5!important;border-radius:2px!important}
+.item:hover,.objective-card:hover{background:#c8aa6e08!important}.item strong{color:#e0bd65!important}.feed div{border-color:#263842!important}
+.controls{background:#050b10!important;border-color:#263842!important;color:#7f8f98!important}.controls kbd{border-color:#53616a!important;background:#0d1b24!important;color:#d8c38e!important}
+@media(max-width:760px){.nav{display:none!important}.topbar{padding:0 14px!important}.game-layout{padding:10px!important}}

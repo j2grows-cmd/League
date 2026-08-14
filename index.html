@@ -4,58 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leaguefall — Rift MOBA</title>
-  <meta name="description" content="A fast lane-based MOBA prototype combining League-style champions with Dota-style strategy." />
+  <meta name="description" content="Leaguefall is an original browser MOBA combining champion combat, lane pressure and Dota-style objectives." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="shell">
-    <header class="topbar">
-      <div class="brand"><span class="brand-mark">◆</span><div><strong>LEAGUEFALL</strong><small>RIFT MOBA</small></div></div>
-      <div class="top-actions"><span id="gold">500 G</span><button id="restart">New Match</button></div>
-    </header>
-
-    <main class="game-layout">
-      <aside class="hero-panel panel">
-        <div class="eyebrow">CHAMPION</div>
-        <div class="hero-avatar" id="heroAvatar">A</div>
-        <h1 id="heroName">Astra</h1>
-        <p id="heroRole">Arcane Battlemage</p>
-        <div class="bars"><div class="bar hp"><span id="hpBar"></span></div><div class="bar mana"><span id="manaBar"></span></div></div>
-        <div class="stats"><span>LVL <b id="level">1</b></span><span>XP <b id="xp">0%</b></span><span>ATK <b id="attack">28</b></span></div>
-        <div class="abilities">
-          <button class="ability ready" data-ability="q"><kbd>Q</kbd><span>Arc Bolt</span></button>
-          <button class="ability" data-ability="w"><kbd>W</kbd><span>Gravity Well</span></button>
-          <button class="ability" data-ability="e"><kbd>E</kbd><span>Phase Step</span></button>
-          <button class="ability ultimate" data-ability="r"><kbd>R</kbd><span>Starfall</span></button>
-        </div>
-        <button class="upgrade" id="upgrade">Upgrade Ability <b>100 G</b></button>
-      </aside>
-
-      <section class="battle panel">
-        <div class="battle-head"><div><span class="eyebrow">BATTLEFIELD</span><h2>Rift of Kings</h2></div><div class="wave">WAVE <b id="wave">1</b><span id="waveState">IN PROGRESS</span></div></div>
-        <div class="arena" id="arena">
-          <div class="lane lane-top"></div><div class="lane lane-mid"></div><div class="lane lane-bot"></div>
-          <div class="jungle jungle-a"></div><div class="jungle jungle-b"></div>
-          <div class="tower blue-tower t1"><span>◆</span></div><div class="tower blue-tower t2"><span>◆</span></div>
-          <div class="tower red-tower r1"><span>◆</span></div><div class="tower red-tower r2"><span>◆</span></div>
-          <div class="base blue-base">BLUE NEXUS</div><div class="base red-base">RED NEXUS</div>
-          <div class="hero-unit" id="heroUnit"><span>A</span></div>
-          <div id="units"></div>
-          <div class="combat-text" id="combatText"></div>
-        </div>
-        <div class="battle-footer"><span id="objective">Destroy the enemy nexus.</span><button id="nextWave" disabled>Launch Wave</button></div>
-      </section>
-
-      <aside class="right-panel">
-        <div class="panel log-panel"><div class="panel-title">MATCH FEED</div><div id="feed" class="feed"></div></div>
-        <div class="panel shop"><div class="panel-title">SHOP <span>ITEMS</span></div>
-          <button class="item" data-cost="250"><span class="item-icon">⚔</span><span><b>Riftblade</b><small>+12 Attack</small></span><strong>250</strong></button>
-          <button class="item" data-cost="300"><span class="item-icon">◈</span><span><b>Void Core</b><small>+20 Max Mana</small></span><strong>300</strong></button>
-          <button class="item" data-cost="200"><span class="item-icon">✦</span><span><b>Swift Boots</b><small>+15% Move Speed</small></span><strong>200</strong></button>
-        </div>
-      </aside>
-    </main>
-  </div>
-  <script src="app.js"></script>
-</body>
-</html>
+<div class="shell">
+<header class="topbar"><div class="brand"><span class="brand-mark">◆</span><div><strong>LEAGUEFALL</strong><small>RIFT MOBA · PHASE 2</small></div></div><div class="top-actions"><span>⚔ <b id="kills">0</b> KILLS</span><span id="gold">500 G</span><button id="restart">New Match</button></div></header>
+<main class="game-layout">
+<aside class="hero-panel panel"><div class="eyebrow">CHAMPION · MID / CARRY</div><div class="hero-avatar" id="heroAvatar">A</div><h1 id="heroName">Astra</h1><p id="heroRole">Arcane Battlemage</p><div class="bars"><div class="bar hp"><span id="hpBar"></span></div><div class="bar mana"><span id="manaBar"></span></div></div><div class="stats"><span>LVL <b id="level">1</b></span><span>XP <b id="xp">0%</b></span><span>ATK <b id="attack">28</b></span></div><div class="abilities"><button class="ability ready" data-ability="q"><kbd>Q</kbd><span>Arc Bolt</span><i class="cooldown"></i></button><button class="ability" data-ability="w"><kbd>W</kbd><span>Gravity Well</span><i class="cooldown"></i></button><button class="ability" data-ability="e"><kbd>E</kbd><span>Phase Step</span><i class="cooldown"></i></button><button class="ability ultimate" data-ability="r"><kbd>R</kbd><span>Starfall</span><i class="cooldown"></i></button></div><button class="upgrade" id="upgrade">Upgrade Ability <b>100 G</b></button><div class="hint">CLICK THE MAP TO MOVE · Q W E R TO CAST</div></aside>
+<section class="battle panel"><div class="battle-head"><div><span class="eyebrow">BATTLEFIELD</span><h2>Rift of Kings</h2></div><div class="wave">WAVE <b id="wave">1</b><span id="waveState">IN PROGRESS</span></div></div><div class="arena" id="arena"><div class="lane lane-top"></div><div class="lane lane-mid"></div><div class="lane lane-bot"></div><div class="jungle jungle-a"></div><div class="jungle jungle-b"></div><button class="camp-marker wolf-camp" data-camp="wolf">WOLF<br><small>+120G</small></button><button class="camp-marker golem-camp" data-camp="golem">GOLEM<br><small>+180G</small></button><button class="tower blue-tower t1" data-tower="blue"><span>◆</span><small id="blueTower">100%</small></button><button class="tower red-tower r1" data-tower="red"><span>◆</span><small id="redTower">100%</small></button><div class="base blue-base">BLUE NEXUS</div><div class="base red-base">RED NEXUS</div><div class="hero-unit" id="heroUnit"><span>A</span></div><div id="units"></div><div class="combat-text" id="combatText"></div></div><div class="battle-footer"><span id="objective">Push the lanes and destroy the enemy towers.</span><button id="nextWave" disabled>Launch Wave</button></div></section>
+<aside class="right-panel"><div class="panel log-panel"><div class="panel-title">MATCH FEED</div><div id="feed" class="feed"></div></div><div class="panel shop"><div class="panel-title">SHOP <span>ITEMS</span></div><button class="item" data-cost="250"><span class="item-icon">⚔</span><span><b>Riftblade</b><small>+12 Attack</small></span><strong>250</strong></button><button class="item" data-cost="300"><span class="item-icon">◈</span><span><b>Void Core</b><small>+20 Max Mana</small></span><strong>300</strong></button><button class="item" data-cost="200"><span class="item-icon">✦</span><span><b>Swift Boots</b><small>+15% Move Speed</small></span><strong>200</strong></button></div><div class="panel objectives"><div class="panel-title">OBJECTIVES</div><div>🐺 <b>Wolf Camp</b><small>Click to clear · 120G</small></div><div>🗿 <b>Ancient Golem</b><small>Click to clear · 180G</small></div><div>🏰 <b>Enemy Tower</b><small>Click tower to attack · 20G</small></div></div></aside>
+</main></div><script src="app.js"></script>
+</body></html>
